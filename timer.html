@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Final Scrum Countdown</title>
+</head>
+<body>
+
+<canvas id="timerCanvas" width="400" height="400"></canvas>
+
+<script src="agileTimer.js" language="JavaScript"></script>
+<script language="JavaScript">
+    const canvas = document.getElementById('timerCanvas');
+    canvas.addEventListener('click',setTimer);
+    let minutes=15;
+
+    initializeTimer(minutes);
+    setInterval(updateTimer, 5000);
+    setInterval(sync, 5000);
+
+</script>
+</body>
+</html>
