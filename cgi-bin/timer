@@ -4,9 +4,7 @@ echo ""
 
 if [ $QUERY_STRING != "" ]
     then
-#       echo $QUERY_STRING
         TIMER_END=${QUERY_STRING/"endMinutes="/}
-#       echo debug: $TIMER_END
         echo $TIMER_END > /tmp/timerEndMinutes
 fi
 
